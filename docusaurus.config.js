@@ -15,7 +15,14 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'Dml World Inc', // Usually your GitHub org/user name.
   projectName: 'Dml World', // Usually your repo name.
-
+    scripts: [
+      {
+        src: 'https://kit.fontawesome.com/f083aaeec4.js',
+        async: true,
+        crossorigin: "anonymous"
+      },
+    ],
+  
   presets: [
     [
       'classic',
@@ -62,12 +69,22 @@ const config = {
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/DmlTheDev/',
-            label: 'GitHub',
+            html: '<i class="fa-brands fa-github"></i>',
             position: 'right',
           },
           {
             href: 'https://discordapp.com/invite/YYR2Fg6A6B',
-            label: 'Discord',
+            html: '<i class="fa-brands fa-discord"></i>',
+            position: 'right',
+          },
+          {
+            href: 'https://ko-fi.com/dmlworld/',
+            html: '<i class="fa-solid fa-mug-hot"></i>',
+            position: 'right',
+          },
+          {
+            href: 'https://www.reddit.com/user/bbwevb/',
+            html: '<i class="fa-brands fa-reddit-alien"></i>',
             position: 'right',
           },
           
@@ -83,6 +100,14 @@ const config = {
                 label: 'Home',
                 to: '/intro',
               },
+              {
+                label: 'Interesting',
+                to: '/interesting',
+              },
+              {
+                label: 'Home',
+                to: '/intro',
+              },
             ],
           },
           {
@@ -93,16 +118,16 @@ const config = {
                 href: 'https://stackoverflow.com/users/18221086/dml/',
               },
               {
+                label: 'Reddit',
+                href: 'https://www.reddit.com/user/bbwevb/',
+              },
+              {
                 label: 'Github',
                 href: 'https://github.com/DmlTheDev/',
               },
               {
                 label: 'Twitter',
                 href: 'https://twitter.com/DmlDev/',
-              },
-              {
-                label: 'Replit',
-                href: 'https://replit.com/@LinuxUser15/',
               },
             ],
           },
@@ -111,7 +136,11 @@ const config = {
             items: [
               {
                 label: 'Discord Server',
-                href: 'https://discordapp.com/invite/YYR2Fg6A6B',
+                href: 'https://discordapp.com/invite/YYR2Fg6A6B/',
+              },
+              {
+                label: 'Replit',
+                href: 'https://replit.com/@LinuxUser15/',
               },
             ],
           },
@@ -123,14 +152,23 @@ const config = {
                 to: '/blog',
               },
               {
-                label: 'Website GitHub Repo',
-                href: 'https://github.com/DmlTheDev/dml-docs',
+                label: 'GitHub Repo',
+                href: 'https://github.com/DmlTheDev/Dml-World/',
               },
+              {
+                label: 'Support me on Ko-Fi',
+                href: 'https://ko-fi.com/dmlworld/',
+              },
+              {
+                label: 'Dev',
+                href: 'https://dev.to/dmldev/',
+              },
+              
               
             ],
           },
         ],
-        copyright: `Copyright © 2019 - ${new Date().getFullYear()} Dml World, Inc. - Version 2.3.2`,
+        copyright: `Copyright © 2019 - ${new Date().getFullYear()} Dml World, Inc. -  v2.3.4`,
       },
       prism: {
         theme: lightCodeTheme,
