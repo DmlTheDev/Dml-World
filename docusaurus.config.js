@@ -32,13 +32,13 @@ const config = {
           routeBasePath:'/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/DmlTheDev/dml-docs/tree/main/',
+          editUrl: 'https://github.com/DmlTheDev/Dml-World/blob/master/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/DmlTheDev/dml-docs/tree/main/',
+            'https://github.com/DmlTheDev/Dml-World/blob/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -53,6 +53,13 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      algolia: {
+        indexName: "dmlworld",
+        appId: '6XJCH4JQR1',
+        apiKey: "b4714a5318c3d9c70ef7710dead0e932",
+        contextualSearch: false,
+        algoliaOptions: {},
+      },
       navbar: {
         title: 'Dml World',
         logo: {
@@ -87,7 +94,6 @@ const config = {
             html: '<i class="fa-brands fa-reddit-alien"></i>',
             position: 'right',
           },
-          
         ],
       },
       footer: {
@@ -168,7 +174,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © 2019 - ${new Date().getFullYear()} Dml World, Inc. -  v2.3.4`,
+        copyright: `Copyright © 2019 - ${new Date().getFullYear()} Dml World, Inc. -  v2.3.7`,
       },
       prism: {
         theme: lightCodeTheme,

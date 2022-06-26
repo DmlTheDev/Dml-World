@@ -1,0 +1,8 @@
+{
+  "label": "Google Dorking",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn more about the technique that uses Google Search and other Google applications to find security holes in the configuration and computer code that websites are using.  "
+  }
+}
